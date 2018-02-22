@@ -1,0 +1,21 @@
+.box {
+
+  width: 300px;
+  display: block;
+
+}
+
+  .box a {
+    margin: 10px;
+    -webkit-columns: 300px 2;
+            columns: 300px 2;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+    -webkit-column-break-inside: avoid;
+            break-inside: avoid;
+    color: #2f346c;
+  }
+
+  .box-small {
+    height: 450px;
+  }
