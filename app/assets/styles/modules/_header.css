@@ -1,3 +1,21 @@
-div {
-  border: 1px solid transparent;
+.header {
+  position: relative;
+
+  &__text-content {
+    position: absolute;
+    top: 25%;
+    right: 25%;
+    border: 1px solid red;
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+
+  &__phone {
+    font-size: 1.25rem;
+    font-weight: medium;
+  }
+
 }
