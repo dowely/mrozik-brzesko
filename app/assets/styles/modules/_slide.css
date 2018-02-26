@@ -1,0 +1,33 @@
+.slide {
+
+  border: 1px solid green;
+
+  &__markup-heading {
+    display: none;
+  }
+
+  &__label-text {
+    width: 180px;
+    margin: 10px auto 5px;
+  }
+
+  &__label-underline {
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  &__description {
+    border: 1px solid orange;
+    width: 100%;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  &__volume {
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid orange;
+  }
+
+}
