@@ -1,6 +1,18 @@
 .slide {
 
-  border: 1px solid green;
+  &--rozek {
+    background:
+      radial-gradient(
+        circle closest-side at 50% 48%,
+        rgba(#fff,1),
+        rgba(#fff,0) 115%
+      ),
+      radial-gradient(
+        farthest-corner,
+        #fdf7e7 20%,
+        #6fcee2
+      );
+  }
 
   &__markup-heading {
     display: none;
@@ -8,7 +20,7 @@
 
   &__label-text {
     width: 180px;
-    margin: 10px auto 5px;
+    margin: 15px auto 5px;
   }
 
   &__label-underline {
@@ -17,17 +29,44 @@
   }
 
   &__description {
-    border: 1px solid orange;
+    border: 1px solid transparent;
     width: 100%;
+    margin-top: 20px;
+    font-size: 1.1rem;
     font-weight: 500;
     text-align: center;
   }
 
+  img {border: 1px solid transparent;}
+
   &__volume {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     font-weight: 500;
     text-align: center;
-    border: 1px solid orange;
+    margin: 20px auto;
+    border: 1px solid transparent;
+  }
+
+  &__flavors {
+    text-align: center;
+    margin-bottom: 70px;
+    border: 1px solid transparent;
+
+    ul {
+      display: inline-block;
+      margin: 0 auto;
+      padding-left: 0;
+      list-style-position: outside;
+    }
+
+    li {
+      text-align: left;
+      font-size: 1.1rem;
+      font-weight: 400;
+      font-style: italic;
+      padding-bottom: 8px;
+      border: 1px dashed transparent;
+    }
   }
 
 }

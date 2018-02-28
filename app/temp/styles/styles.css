@@ -388,11 +388,18 @@ img {
   border: 1px solid blue;
 }
 
-.slide {
-
-  border: 1px solid green;
-
-}
+.slide--rozek {
+    background: radial-gradient(
+        circle closest-side at 50% 48%,
+        rgba(255,255,255,1),
+        rgba(255,255,255,0) 115%
+      ),
+      radial-gradient(
+        farthest-corner,
+        #fdf7e7 20%,
+        #6fcee2
+      );
+  }
 
 .slide__markup-heading {
     display: none;
@@ -400,7 +407,7 @@ img {
 
 .slide__label-text {
     width: 180px;
-    margin: 10px auto 5px;
+    margin: 15px auto 5px;
   }
 
 .slide__label-underline {
@@ -409,15 +416,42 @@ img {
   }
 
 .slide__description {
-    border: 1px solid orange;
+    border: 1px solid transparent;
     width: 100%;
+    margin-top: 20px;
+    font-size: 1.1rem;
     font-weight: 500;
     text-align: center;
   }
 
+.slide img {border: 1px solid transparent;}
+
 .slide__volume {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     font-weight: 500;
     text-align: center;
-    border: 1px solid orange;
+    margin: 20px auto;
+    border: 1px solid transparent;
   }
+
+.slide__flavors {
+    text-align: center;
+    margin-bottom: 70px;
+    border: 1px solid transparent;
+  }
+
+.slide__flavors ul {
+      display: inline-block;
+      margin: 0 auto;
+      padding-left: 0;
+      list-style-position: outside;
+    }
+
+.slide__flavors li {
+      text-align: left;
+      font-size: 1.1rem;
+      font-weight: 400;
+      font-style: italic;
+      padding-bottom: 8px;
+      border: 1px dashed transparent;
+    }
