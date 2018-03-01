@@ -33,11 +33,11 @@
     <picture>
       <source srcset="assets/images/ice-cream-coffe--large.png" media="(min-width: 1280px)" />
       <source srcset="assets/images/ice-cream-coffe--medium.png" media="(min-width: 640px)" />
-      <img srcset="assets/images/ice-cream-coffe--small.png" alt="Coffe ice-cream with a mint leaf" />
+      <img srcset="assets/images/ice-cream-coffe--small.png" alt="Coffe ice-cream with a mint leaf" class="header__photo" />
     </picture>
 
     <div class="header__text-content">
-      <h1 class="header__subtitle">Hurtownia lodów i mrożonek w Brzesku</h1>
+      <h1 class="header__subtitle">Hurtownia <span>lodów i mrożonek</span><span> w Brzesku</span></h1>
       <h2 class="header__phone">14-68-61-950</h2>
     </div>
 
@@ -75,10 +75,20 @@
       </div>
     </article>
 
-    <article>
-      <h4>Kubek</h4>
-      <p>Cztery klasyczne smaki w wygodnym kubeczku.</p>
-      <h5>Objętość netto: 180 ml</h5>
+    <article class="slide slide--kubek wrapper">
+      <h4 class="slide__markup-heading">Kubek</h4>
+      <div class="slide__label-text">
+        <img src="assets/images/png/kubek-label-text.png" alt="Kubek Koral label" />
+      </div>
+      <div class="slide__label-underline">
+        <img src="assets/images/png/kubek-label-underline.png" alt="Kubek Koral label-underline" />
+      </div>
+      <p class="slide__description">Cztery klasyczne smaki w wygodnym kubeczku.</p>
+      <picture>
+        <source srcset="assets/images/png/kubek-4-smaki--medium.png" media="(min-width: 450px)" />
+        <img srcset="assets/images/png/kubek-4-smaki--small.png" alt="Kubek 4-smakowy Koral"/>
+      </picture>
+      <h5 class="slide__volume">Objętość netto: 180 ml</h5>
       <p>Truskawka, cytryna, śmietanka i czekolada w przepysznym mixie!</p>
     </article>
 

@@ -6,7 +6,7 @@ body {
     medium = 500
     semi-bold = 600
     */
-  color: #1a1a1aff;
+  color: $mainGray;
 }
 
 img {

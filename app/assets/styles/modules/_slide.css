@@ -14,6 +14,16 @@
       );
   }
 
+  &--kubek {
+    background:
+      radial-gradient(
+        circle closest-side at 50% 60%,
+        rgba(#fff,1),
+        rgba(#fff,0) 150%
+      ),
+      #f6db80;
+  }
+
   &__markup-heading {
     display: none;
   }
