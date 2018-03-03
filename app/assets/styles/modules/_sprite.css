@@ -1,0 +1,23 @@
+/* Do not edit modules/_sprite directly as it is generated automatically by Gulp. Instead edit gulp/templates/sprite */
+
+    .icon {
+      background-image: url('/assets/images/sprites/sprite-06735633.svg');
+    }
+
+  .icon--next {
+    width: 52px;
+    height: 87px;
+    background-position: 0 0;
+  }
+
+  .icon--phone {
+    width: 34px;
+    height: 34px;
+    background-position: 100% 0;
+  }
+
+  .icon--prev {
+    width: 52px;
+    height: 87px;
+    background-position: 60.46511627906977% 0;
+  }

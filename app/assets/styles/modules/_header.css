@@ -32,11 +32,6 @@
         rgba(#000,.4)
       );
     border-radius: 10px;
-
-    span {
-      display: inline-block;
-    }
-
   }
 
   &__phone {
