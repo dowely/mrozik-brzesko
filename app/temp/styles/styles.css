@@ -361,6 +361,10 @@ img {
   height: auto;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .header {
   position: relative;
   border-bottom: 7px solid #333333;
@@ -421,6 +425,11 @@ img {
   border: 1px solid transparent;
 }
 
+.slide {
+  position: relative;
+
+}
+
 .slide--rozek {
     background: radial-gradient(
         circle closest-side at 50% 48%,
@@ -452,9 +461,23 @@ img {
     margin: 15px auto 5px;
   }
 
+@media (min-width: 650px) {
+
+.slide__label-text {
+      width: 160px
+  }
+  }
+
 .slide__label-underline {
     width: 250px;
     margin: 0 auto;
+  }
+
+@media (min-width: 650px) {
+
+.slide__label-underline {
+      width: 220px
+  }
   }
 
 .slide__description {
@@ -466,7 +489,20 @@ img {
     text-align: center;
   }
 
-.slide img {border: 1px solid transparent;}
+@media (min-width: 650px) {
+
+.slide__description {
+      margin-top: 10px;
+      font-size: 1rem
+  }
+  }
+
+@media (min-width: 650px) {
+
+.slide__image {
+      margin-top: 30px
+  }
+  }
 
 .slide__volume {
     font-size: 1.35rem;
@@ -476,20 +512,35 @@ img {
     border: 1px solid transparent;
   }
 
-.slide__flavors {
+@media (min-width: 650px) {
+
+.slide__volume {
+      font-size: 1.125rem;
+      margin: 0 auto
+  }
+  }
+
+.slide__flavors-list {
     text-align: center;
     margin-bottom: 70px;
     border: 1px solid transparent;
   }
 
-.slide__flavors ul {
+@media (min-width: 650px) {
+
+.slide__flavors-list {
+      margin-top: 15px
+  }
+  }
+
+.slide__flavors-list ul {
       display: inline-block;
       margin: 0 auto;
       padding-left: 0;
       list-style-position: outside;
     }
 
-.slide__flavors li {
+.slide__flavors-list li {
       text-align: left;
       font-size: 1.1rem;
       font-weight: 400;
@@ -497,3 +548,35 @@ img {
       padding-bottom: 8px;
       border: 1px dashed transparent;
     }
+
+@media (min-width: 650px) {
+
+.slide__flavors-list li {
+        font-size: 1rem;
+        padding-bottom: 5px
+    }
+  }
+
+.slide__flavors-summary {
+
+  }
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+@media (min-width: 650px) {
+
+    .row__left {
+      border: 1px solid transparent;
+      float: left;
+      width: 45%;
+    }
+
+    .row__right {
+      float: right;
+      width: 50%;
+    }
+  }
