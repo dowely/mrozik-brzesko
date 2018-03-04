@@ -1,28 +1,11 @@
 .slide {
-  position: relative;
 
-  &--rozek {
-    background:
-      radial-gradient(
-        circle closest-side at 50% 48%,
-        rgba(#fff,1),
-        rgba(#fff,0) 115%
-      ),
-      radial-gradient(
-        farthest-corner,
-        #fdf7e7 20%,
-        #6fcee2
-      );
+  @mixin atSmall {
+    height: 450px;
   }
 
-  &--kubek {
-    background:
-      radial-gradient(
-        circle closest-side at 50% 60%,
-        rgba(#fff,1),
-        rgba(#fff,0) 150%
-      ),
-      #f6db80;
+  @mixin atMedium {
+      height: 600px;
   }
 
   &__markup-heading {
@@ -31,39 +14,50 @@
 
   &__label-text {
     width: 180px;
-    margin: 15px auto 5px;
+    margin: 20px auto 5px;
 
-    @mixin atSmall {
-      width: 160px;
+    @mixin atMedium {
+      margin: 35px auto 10px;
     }
   }
 
   &__label-underline {
     width: 250px;
     margin: 0 auto;
-
-    @mixin atSmall {
-      width: 220px;
-    }
   }
 
   &__description {
     border: 1px solid transparent;
     width: 100%;
-    margin-top: 20px;
     font-size: 1.1rem;
     font-weight: 500;
     text-align: center;
 
     @mixin atSmall {
-      margin-top: 10px;
       font-size: 1rem;
+    }
+
+    @mixin atMedium {
+      font-size: 1.25rem;
+      line-height: 1.25;
+      margin-top: 25px;
     }
   }
 
   &__image {
+    border: 1px solid transparent;
+    text-align: center;
+    padding: 0 8px;
+
     @mixin atSmall {
       margin-top: 30px;
+      padding: 0;
+      position: relative;
+      right: 10px;
+    }
+
+    img {
+      border: 1px solid transparent;
     }
   }
 
@@ -75,8 +69,13 @@
     border: 1px solid transparent;
 
     @mixin atSmall {
-      font-size: 1.125rem;
-      margin: 0 auto;
+      font-size: 1.25rem;
+      margin: 0 auto 15px;
+    }
+
+    @mixin atMedium {
+      font-size: 1.55rem;
+      margin: 10px auto 30px;
     }
   }
 
@@ -86,7 +85,7 @@
     border: 1px solid transparent;
 
     @mixin atSmall {
-      margin-top: 15px;
+      margin-bottom: 0;
     }
 
     ul {
@@ -107,6 +106,11 @@
       @mixin atSmall {
         font-size: 1rem;
         padding-bottom: 5px;
+      }
+
+      @mixin atMedium {
+        font-size: 1.25rem;
+        padding-bottom: 10px;
       }
     }
   }

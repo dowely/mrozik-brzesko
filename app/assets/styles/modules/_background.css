@@ -1,0 +1,41 @@
+.background {
+
+  &--rozek {
+    background:
+      radial-gradient(
+        circle closest-side at 50% 48%,
+        rgba(#fff,1),
+        rgba(#fff,0) 115%
+      ),
+      radial-gradient(
+        farthest-corner,
+        #fdf7e7 20%,
+        #6fcee2
+      );
+
+    @mixin atSmall {
+      background:
+        radial-gradient(
+          circle closest-corner at 80% 50%,
+          rgba(#fff,1) 30%,
+          rgba(#fff,0) 115%
+        ),
+        radial-gradient(
+          farthest-corner,
+          #fdf7e7,
+          #6fcee2
+        );
+    }
+  }
+
+  &--kubek {
+    background:
+      radial-gradient(
+        circle closest-side at 50% 60%,
+        rgba(#fff,1),
+        rgba(#fff,0) 150%
+      ),
+      #f6db80;
+  }
+
+}
