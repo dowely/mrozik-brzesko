@@ -8,6 +8,11 @@
       height: 600px;
   }
 
+  @mixin atLarge {
+      height: 650px;
+      padding-top: 10px;
+  }
+
   &__markup-heading {
     display: none;
   }
@@ -15,6 +20,10 @@
   &__label-text {
     width: 180px;
     margin: 20px auto 5px;
+
+    &--kubek {
+      width: 220px;
+    }
 
     @mixin atMedium {
       margin: 35px auto 10px;
@@ -76,6 +85,11 @@
     @mixin atMedium {
       font-size: 1.55rem;
       margin: 10px auto 30px;
+
+      &--kubek {
+        position: relative;
+        top: 35px;
+      }
     }
   }
 
@@ -116,7 +130,37 @@
   }
 
   &__flavors-summary {
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-style: italic;
 
+    @mixin atSmall {
+      text-align: left;
+      margin-bottom: 0;
+      font-size: 1rem;
+      padding: 20px 0 0 50px;
+      white-space: nowrap;
+
+      br {
+        display: none;
+      }
+
+      span {
+        display: block;
+      }
+    }
+
+    @mixin atMedium {
+      font-size: 1.25rem;
+      padding: 80px 0 0 30px;
+    }
+  }
+
+/* Colors of the fonts */
+  &--kubek {
+    color: #210d04;
   }
 
 }

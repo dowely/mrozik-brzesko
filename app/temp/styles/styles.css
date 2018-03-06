@@ -354,6 +354,7 @@ body {
     semi-bold = 600
     */
   color: #1a1a1a;
+  background-color: whitesmoke;
 }
 
 img {
@@ -446,6 +447,15 @@ span {
 }
   }
 
+@media (min-width: 1200px) {
+
+.slide {
+      height: 650px;
+      padding-top: 10px
+
+}
+  }
+
 .slide__markup-heading {
     display: none;
   }
@@ -454,6 +464,10 @@ span {
     width: 180px;
     margin: 20px auto 5px;
   }
+
+.slide__label-text--kubek {
+      width: 220px;
+    }
 
 @media (min-width: 1000px) {
 
@@ -533,6 +547,11 @@ span {
       font-size: 1.55rem;
       margin: 10px auto 30px
   }
+
+      .slide__volume--kubek {
+        position: relative;
+        top: 35px;
+      }
   }
 
 .slide__flavors-list {
@@ -581,7 +600,44 @@ span {
   }
 
 .slide__flavors-summary {
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-style: italic;
+  }
 
+@media (min-width: 650px) {
+
+.slide__flavors-summary {
+      text-align: left;
+      margin-bottom: 0;
+      font-size: 1rem;
+      padding: 20px 0 0 50px;
+      white-space: nowrap
+  }
+
+      .slide__flavors-summary br {
+        display: none;
+      }
+
+      .slide__flavors-summary span {
+        display: block;
+      }
+  }
+
+@media (min-width: 1000px) {
+
+.slide__flavors-summary {
+      font-size: 1.25rem;
+      padding: 80px 0 0 30px
+  }
+  }
+
+/* Colors of the fonts */
+
+.slide--kubek {
+    color: #210d04;
   }
 
 .row {
@@ -690,4 +746,16 @@ span {
         rgba(255,255,255,0) 150%
       ),
       #f6db80;
+  }
+
+@media (min-width: 650px) {
+
+.background--kubek {
+      background: radial-gradient(
+          farthest-side at 70% 50%,
+          rgba(255,255,255,1),
+          rgba(255,255,255,0) 105%
+        ),
+        #f6db80
+  }
   }
