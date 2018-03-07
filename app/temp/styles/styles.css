@@ -660,19 +660,10 @@ span {
 @media (min-width: 650px) {
 
 .slide-content__flavors-summary {
-
+      text-align: left;
       margin-bottom: 0;
       font-size: 1rem;
-      padding: 20px 0 0 0
-  }
-  }
-
-@media (min-width: 1000px) {
-
-.slide-content__flavors-summary {
-      text-align: left;
-      font-size: 1.25rem;
-      padding: 80px 0 0 30px;
+      padding: 20px 0 0 50px;
       white-space: nowrap
   }
 
@@ -683,6 +674,14 @@ span {
       .slide-content__flavors-summary span {
         display: block;
       }
+  }
+
+@media (min-width: 1000px) {
+
+.slide-content__flavors-summary {
+      font-size: 1.25rem;
+      padding: 80px 0 0 30px
+  }
   }
 
 /* Colors of the fonts */
