@@ -1,4 +1,4 @@
-.slide {
+.slide-content {
 
   @mixin atSmall {
     height: 450px;
@@ -137,10 +137,19 @@
     font-style: italic;
 
     @mixin atSmall {
-      text-align: left;
+
       margin-bottom: 0;
       font-size: 1rem;
-      padding: 20px 0 0 50px;
+      padding: 20px 0 0 0;
+
+
+
+    }
+
+    @mixin atMedium {
+      text-align: left;
+      font-size: 1.25rem;
+      padding: 80px 0 0 30px;
       white-space: nowrap;
 
       br {
@@ -150,11 +159,6 @@
       span {
         display: block;
       }
-    }
-
-    @mixin atMedium {
-      font-size: 1.25rem;
-      padding: 80px 0 0 30px;
     }
   }
 

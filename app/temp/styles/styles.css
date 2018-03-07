@@ -431,9 +431,59 @@ span {
 }
   }
 
+.slide-background--rozek {
+    background: radial-gradient(
+        circle closest-side at 50% 48%,
+        rgba(255,255,255,1),
+        rgba(255,255,255,0) 115%
+      ),
+      radial-gradient(
+        farthest-corner,
+        #fdf7e7 20%,
+        #6fcee2
+      );
+  }
+
 @media (min-width: 650px) {
 
-.slide {
+.slide-background--rozek {
+      background: radial-gradient(
+          circle closest-corner at 80% 50%,
+          rgba(255,255,255,1) 30%,
+          rgba(255,255,255,0) 115%
+        ),
+        radial-gradient(
+          farthest-corner,
+          #fdf7e7,
+          #6fcee2
+        )
+  }
+  }
+
+.slide-background--kubek {
+    background: radial-gradient(
+        circle closest-side at 50% 60%,
+        rgba(255,255,255,1),
+        rgba(255,255,255,0) 150%
+      ),
+      #f6db80;
+  }
+
+@media (min-width: 650px) {
+
+.slide-background--kubek {
+      background: radial-gradient(
+          farthest-side at 72% 50%,
+          rgba(255,255,255,1),
+          rgba(255,255,255,0) 105%
+        ),
+        #f6db80
+  }
+  }
+
+@media (min-width: 650px) {
+
+.slide-content {
     height: 450px
 
 }
@@ -441,7 +491,7 @@ span {
 
 @media (min-width: 1000px) {
 
-.slide {
+.slide-content {
       height: 600px
 
 }
@@ -449,39 +499,39 @@ span {
 
 @media (min-width: 1200px) {
 
-.slide {
+.slide-content {
       height: 650px;
       padding-top: 10px
 
 }
   }
 
-.slide__markup-heading {
+.slide-content__markup-heading {
     display: none;
   }
 
-.slide__label-text {
+.slide-content__label-text {
     width: 180px;
     margin: 20px auto 5px;
   }
 
-.slide__label-text--kubek {
+.slide-content__label-text--kubek {
       width: 220px;
     }
 
 @media (min-width: 1000px) {
 
-.slide__label-text {
+.slide-content__label-text {
       margin: 35px auto 10px
   }
   }
 
-.slide__label-underline {
+.slide-content__label-underline {
     width: 250px;
     margin: 0 auto;
   }
 
-.slide__description {
+.slide-content__description {
     border: 1px solid transparent;
     width: 100%;
     font-size: 1.1rem;
@@ -491,21 +541,21 @@ span {
 
 @media (min-width: 650px) {
 
-.slide__description {
+.slide-content__description {
       font-size: 1rem
   }
   }
 
 @media (min-width: 1000px) {
 
-.slide__description {
+.slide-content__description {
       font-size: 1.25rem;
       line-height: 1.25;
       margin-top: 25px
   }
   }
 
-.slide__image {
+.slide-content__image {
     border: 1px solid transparent;
     text-align: center;
     padding: 0 8px;
@@ -513,7 +563,7 @@ span {
 
 @media (min-width: 650px) {
 
-.slide__image {
+.slide-content__image {
       margin-top: 30px;
       padding: 0;
       position: relative;
@@ -521,11 +571,11 @@ span {
   }
   }
 
-.slide__image img {
+.slide-content__image img {
       border: 1px solid transparent;
     }
 
-.slide__volume {
+.slide-content__volume {
     font-size: 1.35rem;
     font-weight: 500;
     text-align: center;
@@ -535,7 +585,7 @@ span {
 
 @media (min-width: 650px) {
 
-.slide__volume {
+.slide-content__volume {
       font-size: 1.25rem;
       margin: 0 auto 15px
   }
@@ -543,18 +593,18 @@ span {
 
 @media (min-width: 1000px) {
 
-.slide__volume {
+.slide-content__volume {
       font-size: 1.55rem;
       margin: 10px auto 30px
   }
 
-      .slide__volume--kubek {
+      .slide-content__volume--kubek {
         position: relative;
         top: 35px;
       }
   }
 
-.slide__flavors-list {
+.slide-content__flavors-list {
     text-align: center;
     margin-bottom: 70px;
     border: 1px solid transparent;
@@ -562,19 +612,19 @@ span {
 
 @media (min-width: 650px) {
 
-.slide__flavors-list {
+.slide-content__flavors-list {
       margin-bottom: 0
   }
   }
 
-.slide__flavors-list ul {
+.slide-content__flavors-list ul {
       display: inline-block;
       margin: 0 auto;
       padding-left: 0;
       list-style-position: outside;
     }
 
-.slide__flavors-list li {
+.slide-content__flavors-list li {
       text-align: left;
       font-size: 1.1rem;
       font-weight: 400;
@@ -585,7 +635,7 @@ span {
 
 @media (min-width: 650px) {
 
-.slide__flavors-list li {
+.slide-content__flavors-list li {
         font-size: 1rem;
         padding-bottom: 5px
     }
@@ -593,13 +643,13 @@ span {
 
 @media (min-width: 1000px) {
 
-.slide__flavors-list li {
+.slide-content__flavors-list li {
         font-size: 1.25rem;
         padding-bottom: 10px
     }
   }
 
-.slide__flavors-summary {
+.slide-content__flavors-summary {
     text-align: center;
     margin-bottom: 70px;
     font-size: 1.1rem;
@@ -609,34 +659,35 @@ span {
 
 @media (min-width: 650px) {
 
-.slide__flavors-summary {
-      text-align: left;
+.slide-content__flavors-summary {
+
       margin-bottom: 0;
       font-size: 1rem;
-      padding: 20px 0 0 50px;
-      white-space: nowrap
+      padding: 20px 0 0 0
   }
-
-      .slide__flavors-summary br {
-        display: none;
-      }
-
-      .slide__flavors-summary span {
-        display: block;
-      }
   }
 
 @media (min-width: 1000px) {
 
-.slide__flavors-summary {
+.slide-content__flavors-summary {
+      text-align: left;
       font-size: 1.25rem;
-      padding: 80px 0 0 30px
+      padding: 80px 0 0 30px;
+      white-space: nowrap
   }
+
+      .slide-content__flavors-summary br {
+        display: none;
+      }
+
+      .slide-content__flavors-summary span {
+        display: block;
+      }
   }
 
 /* Colors of the fonts */
 
-.slide--kubek {
+.slide-content--kubek {
     color: #210d04;
   }
 
@@ -708,54 +759,4 @@ span {
     width: 52px;
     height: 87px;
     background-position: 60.46511627906977% 0;
-  }
-
-.background--rozek {
-    background: radial-gradient(
-        circle closest-side at 50% 48%,
-        rgba(255,255,255,1),
-        rgba(255,255,255,0) 115%
-      ),
-      radial-gradient(
-        farthest-corner,
-        #fdf7e7 20%,
-        #6fcee2
-      );
-  }
-
-@media (min-width: 650px) {
-
-.background--rozek {
-      background: radial-gradient(
-          circle closest-corner at 80% 50%,
-          rgba(255,255,255,1) 30%,
-          rgba(255,255,255,0) 115%
-        ),
-        radial-gradient(
-          farthest-corner,
-          #fdf7e7,
-          #6fcee2
-        )
-  }
-  }
-
-.background--kubek {
-    background: radial-gradient(
-        circle closest-side at 50% 60%,
-        rgba(255,255,255,1),
-        rgba(255,255,255,0) 150%
-      ),
-      #f6db80;
-  }
-
-@media (min-width: 650px) {
-
-.background--kubek {
-      background: radial-gradient(
-          farthest-side at 70% 50%,
-          rgba(255,255,255,1),
-          rgba(255,255,255,0) 105%
-        ),
-        #f6db80
-  }
   }

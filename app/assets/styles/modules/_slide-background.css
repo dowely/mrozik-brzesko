@@ -1,4 +1,4 @@
-.background {
+.slide-background {
 
   &--rozek {
     background:
@@ -40,7 +40,7 @@
     @mixin atSmall {
       background:
         radial-gradient(
-          farthest-side at 70% 50%,
+          farthest-side at 72% 50%,
           rgba(#fff,1),
           rgba(#fff,0) 105%
         ),

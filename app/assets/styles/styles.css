@@ -4,7 +4,7 @@
 @import "base/_mixins";
 @import "modules/_header";
 @import "modules/_wrapper";
-@import "modules/_slide";
+@import "modules/_slide-background";
+@import "modules/_slide-content";
 @import "modules/_row";
 @import "modules/_sprite";
-@import "modules/_background";
