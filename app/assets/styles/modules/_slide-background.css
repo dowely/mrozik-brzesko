@@ -48,4 +48,44 @@
     }
   }
 
+  &--grand {
+    background:
+      radial-gradient(
+        circle 240px at 50% 47%,
+        rgba(#fff,1),
+        rgba(#fff,.87) 30%,
+        rgba(#fff,.27) 55%,
+        rgba(#fff,.15) 70%,
+        rgba(#fff,.05) 90%,
+        rgba(#fff,0)
+      ),
+      linear-gradient(
+        to bottom right,
+        rgba(#502d16,.06),
+        rgba(#784421,.5) 50%,
+        rgba(#a05a2c,0)
+      ),
+      #39190d;
+
+    @mixin atSmall {
+      background:
+        radial-gradient(
+          ellipse closest-corner at 70% 47%,
+          rgba(#fff,1),
+          rgba(#fff,.85) 30%,
+          rgba(#fff,.25) 55%,
+          rgba(#fff,.15) 70%,
+          rgba(#fff,.05) 90%,
+          rgba(#fff,0)
+        ),
+        linear-gradient(
+          to bottom right,
+          rgba(#502d16,.06),
+          rgba(#784421,.5) 50%,
+          rgba(#a05a2c,0)
+        ),
+        #39190d;
+    }
+  }
+
 }
