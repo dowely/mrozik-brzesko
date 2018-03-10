@@ -7,7 +7,7 @@
   }
 
   &__text-content {
-    color: #fdf7e7;
+    color: $creamyWhite;
     padding-bottom: 7px;
     position: absolute;
     bottom: 0;
