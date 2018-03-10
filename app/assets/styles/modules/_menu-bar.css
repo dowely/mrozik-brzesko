@@ -1,0 +1,14 @@
+.menu-bar {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  background-color: rgba(#000,.6);
+
+  &__logo {
+    position: absolute;
+  }
+
+  &__nav-container {
+    float: right;
+  }
+}
