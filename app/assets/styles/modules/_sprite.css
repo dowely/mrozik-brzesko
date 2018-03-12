@@ -1,23 +1,29 @@
 /* Do not edit modules/_sprite directly as it is generated automatically by Gulp. Instead edit gulp/templates/sprite */
 
     .icon {
-      background-image: url('/assets/images/sprites/sprite-06735633.svg');
+      background-image: url('/assets/images/sprites/sprite-aca800be.svg');
     }
+
+  .icon--logo-mrozik {
+    width: 315px;
+    height: 130px;
+    background-position: 0 0;
+  }
 
   .icon--next {
     width: 52px;
     height: 87px;
-    background-position: 0 0;
+    background-position: 0 100%;
   }
 
   .icon--phone {
-    width: 34px;
-    height: 34px;
-    background-position: 100% 0;
+    width: 32px;
+    height: 32px;
+    background-position: 36.74911660777385% 70.27027027027027%;
   }
 
   .icon--prev {
     width: 52px;
     height: 87px;
-    background-position: 60.46511627906977% 0;
+    background-position: 19.771863117870723% 100%;
   }

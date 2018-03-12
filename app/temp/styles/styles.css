@@ -411,16 +411,34 @@ span {
     font-size: 1.375rem;
     font-weight: 500;
     max-width: 16rem;
+    height: 40px;
+    line-height: 40px;
     margin: 0 auto;
     background-color: rgba(0,0,0,.5);
     border-radius: 7px;
   }
+
+.header__phone span {
+      margin-top: -100%;
+      margin-right: 10px;
+      position: relative;
+      top: 8px;
+    }
 
 .wrapper {
   padding-left: 10px;
   padding-right: 10px;
   border: 1px solid transparent;
 }
+
+@media (min-width: 1000px) {
+
+.wrapper--align-with-row {
+      max-width: 950px;
+      margin-left: auto;
+      margin-right: auto
+  }
+  }
 
 @media (min-width: 1200px) {
 
@@ -806,40 +824,97 @@ span {
 /* Do not edit modules/_sprite directly as it is generated automatically by Gulp. Instead edit gulp/templates/sprite */
 
 .icon {
-      background-image: url('/assets/images/sprites/sprite-06735633.svg');
+      background-image: url('/assets/images/sprites/sprite-aca800be.svg');
     }
+
+.icon--logo-mrozik {
+    width: 315px;
+    height: 130px;
+    background-position: 0 0;
+  }
 
 .icon--next {
     width: 52px;
     height: 87px;
-    background-position: 0 0;
+    background-position: 0 100%;
   }
 
 .icon--phone {
-    width: 34px;
-    height: 34px;
-    background-position: 100% 0;
+    width: 32px;
+    height: 32px;
+    background-position: 36.74911660777385% 70.27027027027027%;
   }
 
 .icon--prev {
     width: 52px;
     height: 87px;
-    background-position: 60.46511627906977% 0;
+    background-position: 19.771863117870723% 100%;
   }
 
 .menu-bar {
   position: absolute;
   z-index: 2;
   width: 100%;
-  background-color: rgba(0,0,0,.6);
 }
+
+@media (min-width: 1000px) {
+
+.menu-bar {
+    background-color: rgba(0,0,0,.6)
+}
+  }
 
 .menu-bar__logo {
     position: absolute;
+    top: -1px; /* render enhancement */
+    left: 50%;
+    -webkit-transform: translateX(-50%) scale(.81);
+            transform: translateX(-50%) scale(.81);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+  }
+
+@media (min-width: 1000px) {
+
+.menu-bar__logo {
+      left: auto;
+      -webkit-transform: translateX(0);
+              transform: translateX(0)
+  }
+  }
+
+.menu-bar__logo__graphic {
+    text-indent: -9999px;
+  }
+
+.menu-bar__menu-icon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+  }
+
+@media (min-width: 1000px) {
+
+.menu-bar__menu-icon {
+      display: none
+  }
   }
 
 .menu-bar__nav-container {
-    float: right;
+    display: none;
+
+  }
+
+@media (min-width: 1000px) {
+
+.menu-bar__nav-container {
+      display: block;
+      float: right
+
+  }
   }
 
 .primary-nav ul {
@@ -860,6 +935,6 @@ span {
     text-decoration: none;
     color: #fdf7e7;
     display: block; /* for padding to work */
-    padding: 1.5rem 0;
+    padding: 1.6rem 0 1.8rem;
 
   }

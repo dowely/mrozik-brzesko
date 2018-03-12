@@ -19,7 +19,7 @@
     text-decoration: none;
     color: $creamyWhite;
     display: block; /* for padding to work */
-    padding: 1.5rem 0;
+    padding: 1.6rem 0 1.8rem;
 
   }
 }
