@@ -1,7 +1,7 @@
 .wrapper {
   padding-left: 10px;
   padding-right: 10px;
-  border: 1px solid transparent;
+  
 
   &--align-with-row {
     @mixin atMedium {
@@ -11,6 +11,11 @@
     }
   }
 
+  &--no-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   @mixin atLarge {
     max-width: 1100px;
     margin-left: auto;
@@ -18,4 +23,5 @@
     padding-left: 0;
     padding-right: 0;
   }
+
 }

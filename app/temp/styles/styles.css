@@ -385,10 +385,25 @@ span {
     padding-bottom: 7px;
     position: absolute;
     bottom: 0;
-    right: 0;
     width: 100%;
     text-align: center;
     border: 1px solid transparent;
+  }
+
+@media (min-width: 1000px) {
+
+.header__text-content {
+      bottom: 35%;
+      -webkit-transform: translateY(50%);
+              transform: translateY(50%)
+  }
+  }
+
+@media (min-width: 1200px) {
+
+.header__text-content {
+      bottom: 40%
+  }
   }
 
 .header__subtitle {
@@ -404,7 +419,30 @@ span {
         rgba(0,0,0,.6),
         rgba(0,0,0,.4)
       );
-    border-radius: 10px;
+    border-radius: 8px;
+  }
+
+@media (min-width: 1000px) {
+
+.header__subtitle {
+      font-size: 1.875rem;
+      max-width: 39rem;
+      margin-right: -10px;
+      white-space: pre;
+      background-image: radial-gradient(
+          rgba(0,0,0,0),
+          rgba(0,0,0,0)
+        ), rgba(0,0,0,.5)
+  }
+  }
+
+@media (min-width: 1200px) {
+
+.header__subtitle {
+      font-size: 2.1rem;
+      max-width: 43rem;
+      margin-right: 0
+  }
   }
 
 .header__phone {
@@ -415,7 +453,7 @@ span {
     line-height: 40px;
     margin: 0 auto;
     background-color: rgba(0,0,0,.5);
-    border-radius: 7px;
+    border-radius: 8px;
   }
 
 .header__phone span {
@@ -425,10 +463,32 @@ span {
       top: 8px;
     }
 
+@media (min-width: 1000px) {
+
+.header__phone {
+      font-size: 1.5rem;
+      margin-right: -10px
+  }
+  }
+
+@media (min-width: 1200px) {
+
+.header__phone {
+      font-size: 1.6rem;
+      margin-right: 0;
+      height: 45px;
+      line-height: 45px
+  }
+
+      .header__phone span {
+        top: 7px;
+      }
+  }
+
 .wrapper {
   padding-left: 10px;
   padding-right: 10px;
-  border: 1px solid transparent;
+
 }
 
 @media (min-width: 1000px) {
@@ -440,6 +500,11 @@ span {
   }
   }
 
+.wrapper--no-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
 @media (min-width: 1200px) {
 
 .wrapper {
@@ -448,6 +513,7 @@ span {
     margin-right: auto;
     padding-left: 0;
     padding-right: 0
+
 }
   }
 
@@ -541,6 +607,11 @@ span {
         #39190d
   }
   }
+
+.slide-content {
+  overflow: auto;
+
+}
 
 @media (min-width: 650px) {
 
@@ -874,6 +945,14 @@ span {
             transform-origin: 50% 0;
   }
 
+@media (min-width: 650px) {
+
+.menu-bar__logo {
+      -webkit-transform: translateX(-50%) scale(1);
+              transform: translateX(-50%) scale(1)
+  }
+  }
+
 @media (min-width: 1000px) {
 
 .menu-bar__logo {
@@ -892,7 +971,7 @@ span {
     height: 20px;
     position: absolute;
     top: 10px;
-    right: 10px;
+    left: 10px;
     background-color: #fff;
   }
 
@@ -937,4 +1016,19 @@ span {
     display: block; /* for padding to work */
     padding: 1.6rem 0 1.8rem;
 
+  }
+
+.main {
+  position: relative;
+
+}
+
+@media (min-width: 1200px) {
+
+.main {
+  margin-top: -50px;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden
+
+}
   }

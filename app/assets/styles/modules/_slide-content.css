@@ -1,4 +1,5 @@
 .slide-content {
+  overflow: auto;
 
   @mixin atSmall {
     height: 450px;
