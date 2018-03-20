@@ -996,6 +996,10 @@ span {
   }
   }
 
+.menu-bar__nav-container--is-visible {
+      display: block;
+    }
+
 .primary-nav ul {
     list-style: none;
     margin: 0;

@@ -1,3 +1,3 @@
-//var menu = require('./modules/MobileMenu');
-import menu from './modules/MobileMenu';
-new menu;
+import MobileMenu from './modules/MobileMenu';
+
+var mobileMenu = new MobileMenu();
