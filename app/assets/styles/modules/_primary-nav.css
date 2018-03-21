@@ -9,17 +9,39 @@
 
   li {
     display: inline-block;
-    padding-left: 1.5rem;
+    padding-left: 2px;
+
+    @mixin atMedium {
+      padding-left: 1.5rem;
+    }
 
   }
 
+  li:first-child {
+    padding-left: 0;
+  }
+
   a {
-    font-size: 1.5rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.25rem;
     font-weight: 300;
     text-decoration: none;
     color: $creamyWhite;
     display: block; /* for padding to work */
-    padding: 1.6rem 0 1.8rem;
+    padding: 5px 8px;
+    background-color: rgba($logoBGout, 1);
+    border-radius: 15px/50%;
+
+    @mixin atMedium {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: $creamyWhite;
+      display: block; /* for padding to work */
+      padding: 1.6rem 0 1.8rem;
+      background-color: transparent;
+    }
+
 
   }
 }
