@@ -1,3 +1,6 @@
 $mainGray: #1a1a1a; /* 90% gray */
 $horizRule: #333333; /* 80% gray */
 $creamyWhite: #fdf7e7;
+$logoBlue: #5ec2e7; /* snowflake from the logo*/
+$logoBGin: #5c5c6c; /* logo gradient background inbound */
+$logoBGout: #36363e; /* logo gradient background outbound */ 
