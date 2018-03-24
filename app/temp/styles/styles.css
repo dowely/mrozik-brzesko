@@ -1084,6 +1084,8 @@ span {
 .menu-bar__nav-container {
       padding-top: 70px;
       padding-bottom: 0;
+      opacity: 1;
+      z-index: 1;
       -webkit-transform: scale(1);
               transform: scale(1)
 
@@ -1135,6 +1137,9 @@ span {
 .primary-nav li {
     display: inline-block;
     padding-left: 2px;
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 
   }
 
@@ -1142,7 +1147,9 @@ span {
 
 .primary-nav li {
       display: block;
-      margin: 20px 40px
+      margin: 20px 40px;
+      -webkit-transform: translateX(-150%);
+              transform: translateX(-150%)
 
   }
   }
@@ -1152,13 +1159,23 @@ span {
 .primary-nav li {
       padding-left: 1.5rem;
       display: inline-block;
-      margin: 0
+      margin: 0;
+      -webkit-transform: translateX(0);
+              transform: translateX(0)
 
   }
   }
 
 .primary-nav li:first-child {
     padding-left: 0;
+  }
+
+@media (min-width: 650px) {
+
+.primary-nav li.in-view {
+      -webkit-transform: translateX(0);
+              transform: translateX(0)
+  }
   }
 
 .primary-nav a {
