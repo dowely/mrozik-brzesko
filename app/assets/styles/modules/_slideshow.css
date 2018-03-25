@@ -1,0 +1,50 @@
+.slideshow {
+
+  &__slide {
+    position: relative; /* for z-index to work for tabulated slides on mobile */
+    transition: margin-bottom 0.8s;
+
+    &:not(.slideshow__slide--1) {
+      border-radius: 25px 25px 0 0;
+    }
+
+    &--1 {
+      margin-bottom: -47rem;
+      z-index: 1;
+    }
+
+    &--2 {
+      margin-bottom: -37rem;
+      z-index: 2;
+    }
+
+    &--3 {
+      margin-bottom: 0;
+      z-index: 3;
+    }
+
+    &--exposed {
+      margin-bottom: -35px;
+    }
+  }
+
+  /*undoing mobile behaviour */
+
+  @mixin atSmall {
+    &__slide {
+      position: static; /*possibly absolute in the future when slider*/
+
+      &:not(.slideshow__slide--1) {
+        border-radius: 0;
+      }
+    }
+
+    &__slide--1,
+    &__slide--2,
+    &__slide--3 {
+      margin-bottom: 0;
+      z-index: auto;
+    }
+  }
+
+}

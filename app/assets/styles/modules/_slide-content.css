@@ -175,6 +175,11 @@
   }
 
 /* Colors of the fonts */
+
+  &--rozek {
+    /*place holder, to be removed if ended up empty */
+  }
+
   &--kubek {
     color: #210d04;
   }
