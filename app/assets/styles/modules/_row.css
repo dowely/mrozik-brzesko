@@ -18,6 +18,7 @@
       float: right;
       width: 50%;
     }
+
   }
 
   @mixin atMedium {

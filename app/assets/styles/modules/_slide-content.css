@@ -6,12 +6,12 @@
   }
 
   @mixin atMedium {
-      height: 600px;
+    height: 600px;
   }
 
   @mixin atLarge {
-      height: 650px;
-      padding-top: 10px;
+    height: 650px;
+    padding-top: 10px;
   }
 
   &__markup-heading {

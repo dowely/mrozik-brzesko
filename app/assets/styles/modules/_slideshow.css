@@ -1,4 +1,5 @@
 .slideshow {
+  @mixin clearfix;
 
   &__slide {
     position: relative; /* for z-index to work for tabulated slides on mobile */
@@ -26,24 +27,33 @@
     &--exposed {
       margin-bottom: -35px;
     }
+
+    &:last-of-type {
+      margin-bottom: 0;
+      z-index: 6;
+    }
   }
 
   /*undoing mobile behaviour */
 
   @mixin atSmall {
+
     &__slide {
-      position: static; /*possibly absolute in the future when slider*/
+      float: left;
+      width: 100%;
+      margin-bottom: 0;
+      z-index: auto;
 
       &:not(.slideshow__slide--1) {
         border-radius: 0;
+        display: none;
       }
     }
 
     &__slide--1,
     &__slide--2,
     &__slide--3 {
-      margin-bottom: 0;
-      z-index: auto;
+
     }
   }
 
