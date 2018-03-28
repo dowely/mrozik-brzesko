@@ -13,3 +13,5 @@
 @import "modules/_main";
 @import "modules/_slideshow";
 @import "modules/_slideshow-tablet-nav";
+@import "modules/_slideshow-desktop-nav";
+@import "modules/_section";
