@@ -907,31 +907,43 @@ span {
 /* Do not edit modules/_sprite directly as it is generated automatically by Gulp. Instead edit gulp/templates/sprite */
 
 .icon {
-      background-image: url('/assets/images/sprites/sprite-aca800be.svg');
+      background-image: url('/assets/images/sprites/sprite-4baa75de.svg');
     }
 
 .icon--logo-mrozik {
-    width: 315px;
-    height: 130px;
+    width: 317px;
+    height: 132px;
+    background-position: 100% 0;
+  }
+
+.icon--map {
+    width: 452px;
+    height: 322px;
     background-position: 0 0;
   }
 
 .icon--next {
     width: 52px;
     height: 87px;
+    background-position: 63.04044630404463% 19.642857142857142%;
+  }
+
+.icon--open {
+    width: 362px;
+    height: 437px;
     background-position: 0 100%;
   }
 
 .icon--phone {
-    width: 32px;
-    height: 32px;
-    background-position: 36.74911660777385% 70.27027027027027%;
+    width: 34px;
+    height: 34px;
+    background-position: 75.64625850340136% 18.20689655172414%;
   }
 
 .icon--prev {
     width: 52px;
     height: 87px;
-    background-position: 19.771863117870723% 100%;
+    background-position: 70.2928870292887% 19.642857142857142%;
   }
 
 .menu-bar {
@@ -961,7 +973,7 @@ span {
 
 .menu-bar__logo {
     position: absolute;
-    top: -1px; /* render enhancement */
+    top: -3px; /* render enhancement */
     left: 50%;
     -webkit-transform: translateX(-50%) scale(.81);
             transform: translateX(-50%) scale(.81);
@@ -1415,3 +1427,56 @@ span {
   /*border: 1px solid crimson;*/
   position: relative;
 }
+
+.footer {
+
+  position: relative;
+  height: 750px;
+
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    color: blue;
+  }
+
+.footer__map {
+
+    padding-left: 40px; /* h3's text indent */
+
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    -webkit-transform: translateX(-49%) scale(0.75);
+            transform: translateX(-49%) scale(0.75);
+  }
+
+.footer__map h3 {
+      margin-top: 2.275rem;
+    }
+
+.footer__open {
+
+    text-align: center;
+    padding-top: 230px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    -webkit-transform: translate(-50%, -20%) scale(0.92);
+            transform: translate(-50%, -20%) scale(0.92);
+  }
+
+.footer__open h3 {
+      color: red;
+    }
+
+.footer__author {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }

@@ -1,0 +1,48 @@
+.footer {
+
+  position: relative;
+  height: 750px;
+
+  h3 {
+    font-size: 1.5rem;
+    color: blue;
+  }
+
+  &__map {
+
+    padding-left: 40px; /* h3's text indent */
+
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform-origin: top;
+    transform: translateX(-49%) scale(0.75);
+
+    h3 {
+      margin-top: 2.275rem;
+    }
+  }
+
+  &__open {
+
+    text-align: center;
+    padding-top: 230px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: top;
+    transform: translate(-50%, -20%) scale(0.92);
+
+    h3 {
+      color: red;
+    }
+  }
+
+  &__author {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+}
