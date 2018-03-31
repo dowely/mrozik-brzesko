@@ -13,6 +13,7 @@
     transform: translateY(-50%);
     left: 20px;
     cursor: pointer;
+    z-index: 10;
   }
 
   &__next {
@@ -21,6 +22,7 @@
     transform: translateY(-50%);
     right: 20px;
     cursor: pointer;
+    z-index: 10;
   }
 
   &__dots {
@@ -34,6 +36,7 @@
     bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 10;
 
     li {
       border: 4px solid rgba(#000, .65);
