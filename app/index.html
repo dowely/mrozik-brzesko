@@ -71,11 +71,11 @@
 
   <section id="Lody" class="section">
 
-    <div class="slideshow">
+    <!-- <div class="slideshow"> -->
 
       <!-- ROŻEK BEGIN -->
 
-      <article class="slide-content slide-content--rozek slide-background--rozek wrapper slideshow__slide slideshow__slide--1 slideshow__slide--exposed">
+      <article class="wrapper slide-content slide-content--rozek slide-background--rozek slideshow slideshow--rozek slideshow--current slideshow--fadeIn">
         <div class="row">
           <div class="row__left">
             <h4 class="slide-content__markup-heading">Rożek</h4>
@@ -109,7 +109,7 @@
       <!-- ROŻEK END -->
       <!-- KUBEK BEGIN -->
 
-      <article class="slide-content slide-content--kubek slide-background--kubek wrapper slideshow__slide slideshow__slide--2">
+      <article class="wrapper slide-content slide-content--kubek slide-background--kubek slideshow slideshow--kubek">
         <div class="row">
           <div class="row__left">
             <h4 class="slide-content__markup-heading">Kubek</h4>
@@ -134,7 +134,7 @@
       <!-- KUBEK END -->
       <!-- GRAND BEGIN -->
 
-      <article class="slide-content slide-content--grand slide-background--grand wrapper slideshow__slide slideshow__slide--3 slideshow__slide--exposed">
+      <article class="wrapper slide-content slide-content--grand slide-background--grand slideshow slideshow--grand">
         <div class="row">
           <div class="row__left">
             <h4 class="slide-content__markup-heading">Grand</h4>
@@ -165,15 +165,15 @@
 
       <!-- GRAND END -->
 
-    </div>
+    <!-- </div> -->
 
     <!-- Tablet navigation BEGIN -->
 
     <div class="slideshow-tablet-nav">
       <ul>
-        <li><img src="assets/images/png/rozek-label-text.png" alt="Rożek Koral label" /></li>
-        <li><img src="assets/images/png/kubek-label-text.png" alt="Kubek Koral label" /></li>
-        <li><img src="assets/images/png/grand-label-text.png" alt="Grand Koral label" /></li>
+        <li data-index="0"><img src="assets/images/png/rozek-label-text.png" alt="Rożek Koral label" /></li>
+        <li data-index="1"><img src="assets/images/png/kubek-label-text.png" alt="Kubek Koral label" /></li>
+        <li data-index="2"><img src="assets/images/png/grand-label-text.png" alt="Grand Koral label" /></li>
       </ul>
     </div>
 
@@ -185,7 +185,7 @@
       <span class="slideshow-desktop-nav__prev icon icon--prev">prev</span>
       <span class="slideshow-desktop-nav__next icon icon--next">next</span>
       <ul class="slideshow-desktop-nav__dots">
-        <li class="current"><a>Rożek</a></li>
+        <li class="current-dot"><a>Rożek</a></li>
         <li><a>Kubek</a></li>
         <li><a>Grand</a></li>
       </ul>

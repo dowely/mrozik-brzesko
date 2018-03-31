@@ -1,4 +1,9 @@
 .section {
+  
+
+  @mixin clearfix;
+
   /*border: 1px solid crimson;*/
+
   position: relative;
 }

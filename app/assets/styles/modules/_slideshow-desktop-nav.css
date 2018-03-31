@@ -59,7 +59,7 @@
       cursor: pointer; /* make the text accessible to screen readers */
     }
 
-    .current a {
+    .current-dot a {
       background-color: rgba(#000, .65);
     }
   }
