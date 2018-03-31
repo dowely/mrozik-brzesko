@@ -1427,6 +1427,7 @@ span {
   /*border: 1px solid crimson;*/
 
   position: relative;
+  background-color: #E8E8E8;
 }
 
 .section::after {
