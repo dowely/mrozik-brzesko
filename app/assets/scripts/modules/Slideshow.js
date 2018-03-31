@@ -24,8 +24,8 @@ class Slideshow {
 
     if($(this).hasClass('slideshow--current')) return 0;
     $(this).siblings('.slideshow--current')
-           .removeClass('slideshow--current slideshow--fadeIn');
-    $(this).addClass('slideshow--current slideshow--fadeIn');
+           .removeClass('slideshow--current');
+    $(this).addClass('slideshow--current');
 
   }
 
@@ -34,11 +34,12 @@ class Slideshow {
     var that = event.data;
     that.slideIndex = $(this).data('index');
 
-    that.slides.eq(that.slideIndex).siblings().removeClass('slideshow--current slideshow--fadeIn');
+    that.slides.eq(that.slideIndex).siblings().removeClass('slideshow--current');
     that.slides.eq(that.slideIndex).addClass('slideshow--current');
-    setTimeout(function(){
-      that.slides.eq(that.slideIndex).addClass('slideshow--fadeIn');
-    }, 100);
+    that.slides.eq(that.slideIndex)
+      .css({opacity: "0"})
+      .animate({opacity: "1"}, 1000);
+
   }
 
 }

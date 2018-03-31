@@ -1,7 +1,7 @@
 .slideshow {
 
   position: relative; /* for z-index to work for tabulated slides on mobile */
-  transition: margin-bottom 0.8s, opacity 1.5s ease-out;
+  transition: margin-bottom 0.8s;
 
   &:not(.slideshow--rozek) {
     border-radius: 25px 25px 0 0;
@@ -46,10 +46,6 @@
 
     &--current {
       display: block;
-      opacity: 0;
-    }
-
-    &--fadeIn {
       opacity: 1;
     }
 

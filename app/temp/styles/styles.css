@@ -1242,7 +1242,7 @@ span {
 .slideshow {
 
   position: relative; /* for z-index to work for tabulated slides on mobile */
-  transition: margin-bottom 0.8s, opacity 1.5s ease-out;
+  transition: margin-bottom 0.8s;
 
 }
 
@@ -1293,10 +1293,6 @@ span {
 
     .slideshow--current {
       display: block;
-      opacity: 0;
-    }
-
-    .slideshow--fadeIn {
       opacity: 1;
     }
   }
