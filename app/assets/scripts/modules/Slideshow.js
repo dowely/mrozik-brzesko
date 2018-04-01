@@ -24,17 +24,42 @@ class Slideshow {
       that.moveBy(1);
       that.showCurrentSlide();
     });
+    this.prevBtn.on('click', this, function(event){
+      event.stopPropagation();
+      var that = event.data;
+      that.moveBy(-1);
+      that.showCurrentSlide();
+    });
+    this.dots.on('click', 'li', this, function(event) {
+      event.stopPropagation();
+      var that = event.data;
+
+      that.slideIndex = $(this).index(".slideshow-desktop-nav__dots li");
+      if(that.slides.eq(that.slideIndex).hasClass('slideshow--current')) return 0;
+
+      that.showCurrentSlide();
+    });
   }
 
   exposeSlide(event) {
     event.stopPropagation();
     var that = event.data;
-    that.slideIndex = $(this).index(".slideshow");
 
+    that.slideIndex = $(this).index(".slideshow");
     if($(this).hasClass('slideshow--current')) return 0;
+
     $(this).siblings('.slideshow--current')
            .removeClass('slideshow--current');
     $(this).addClass('slideshow--current');
+
+    let dot = that.dots.find('li');
+    let link = that.tabletNav.find('li');
+
+    dot.removeClass('current-dot');
+    dot.eq(that.slideIndex).addClass('current-dot');
+
+    link.removeClass('current-link');
+    link.eq(that.slideIndex).addClass('current-link');
 
   }
 
@@ -44,6 +69,16 @@ class Slideshow {
     this.slides.eq(this.slideIndex)
       .css({opacity: "0.3"})
       .animate({opacity: "1"}, 1000);
+
+    let dot = this.dots.find('li');
+    let link = this.tabletNav.find('li');
+
+    dot.removeClass('current-dot');
+    dot.eq(this.slideIndex).addClass('current-dot');
+
+    link.removeClass('current-link');
+    link.eq(this.slideIndex).addClass('current-link');
+
   }
 
   jumpTo(event) {
@@ -51,19 +86,31 @@ class Slideshow {
     var that = event.data;
     that.slideIndex = $(this).data('index');
 
+    if(that.slides.eq(that.slideIndex).hasClass('slideshow--current')) return 0;
     that.slides.eq(that.slideIndex).siblings().removeClass('slideshow--current');
     that.slides.eq(that.slideIndex).addClass('slideshow--current');
     that.slides.eq(that.slideIndex)
       .css({opacity: "0"})
       .animate({opacity: "1"}, 1000);
 
+    let dot = that.dots.find('li');
+    let link = that.tabletNav.find('li');
+
+    dot.removeClass('current-dot');
+    dot.eq(that.slideIndex).addClass('current-dot');
+
+    link.removeClass('current-link');
+    link.eq(that.slideIndex).addClass('current-link');
+
   }
 
   moveBy(vector) {
-    if(this.slideIndex < this.slides.length - 1) {
-      this.slideIndex += vector;
-    } else {
+    if(this.slideIndex === this.slides.length - 1 && vector > 0) {
       this.slideIndex = 0;
+    } else if (this.slideIndex === 0 && vector < 0) {
+      this.slideIndex = this.slides.length - 1;
+    } else {
+      this.slideIndex += vector;
     }
   }
 

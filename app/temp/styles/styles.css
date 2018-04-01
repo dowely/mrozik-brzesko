@@ -1325,6 +1325,10 @@ span {
     padding: 2px 8px;
   }
 
+.slideshow-tablet-nav li.current-link {
+    background-color: rgba(255,255,255, .2);
+  }
+
 .slideshow-tablet-nav img {
     vertical-align: middle;
   }
@@ -1366,6 +1370,11 @@ span {
     left: 20px;
     cursor: pointer;
     z-index: 10;
+    opacity: .999;
+  }
+
+.slideshow-desktop-nav__prev:hover {
+    opacity: .85;
   }
 
 .slideshow-desktop-nav__next {
@@ -1376,6 +1385,11 @@ span {
     right: 20px;
     cursor: pointer;
     z-index: 10;
+    opacity: .999;
+  }
+
+.slideshow-desktop-nav__next:hover {
+    opacity: .85;
   }
 
 .slideshow-desktop-nav__dots {
@@ -1405,10 +1419,14 @@ span {
       cursor: pointer;
     }
 
+.slideshow-desktop-nav__dots li:hover {
+      border: 4px solid rgba(0,0,0, .5);
+    }
+
 .slideshow-desktop-nav__dots a {
       background-color: rgba(0,0,0, 0);
-      width: 17px;
-      height: 17px;
+      width: 5px;
+      height: 5px;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -1416,10 +1434,13 @@ span {
               transform: translate(-50%, -50%);
       border-radius: 50%;
       cursor: pointer; /* make the text accessible to screen readers */
+      transition: all .15s ease-in;
     }
 
 .slideshow-desktop-nav__dots .current-dot a {
       background-color: rgba(0,0,0, .65);
+      width: 17px;
+      height: 17px;
     }
 
 .section {
