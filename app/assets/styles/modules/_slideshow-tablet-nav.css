@@ -20,7 +20,7 @@
   }
 
   li.current-link {
-    background-color: rgba(#fff, .2);
+    background-color: rgba($mainGray, 1);
   }
 
   img {

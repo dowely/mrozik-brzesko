@@ -3,9 +3,23 @@
   position: relative;
   height: 750px;
 
+  @mixin atSmall {
+    height: 900px;
+  }
+
+  @mixin atMedium {
+    height: 550px;
+  }
+
+  &__background {
+    background-image: linear-gradient(to bottom, $logoBGin, #2a2a30);
+  }
+
   h3 {
     font-size: 1.5rem;
-    color: blue;
+    font-weight: 400;
+    color: $creamyWhite;
+    text-shadow: 1px 1px 3px rgba($mainGray, 1)
   }
 
   &__map {
@@ -13,13 +27,28 @@
     padding-left: 40px; /* h3's text indent */
 
     position: absolute;
-    top: 20px;
+    top: 30px;
     left: 50%;
     transform-origin: top;
     transform: translateX(-49%) scale(0.75);
 
     h3 {
       margin-top: 2.275rem;
+    }
+
+    @mixin atSmall {
+      top: 40px;
+      transform: translateX(-40%) scale(1);
+    }
+
+    @mixin atMedium {
+      position: static;
+      transform: none;
+      float: left;
+      margin-top: 40px;
+      margin-left: 40px;
+
+      border-top: 1px solid transparent; /* to prevent margin collapsing */
     }
   }
 
@@ -32,17 +61,56 @@
     top: 50%;
     left: 50%;
     transform-origin: top;
-    transform: translate(-50%, -20%) scale(0.92);
+    transform: translate(-50%, -18%) scale(0.92);
 
-    h3 {
-      color: red;
+    @mixin atSmall {
+      transform: translate(-50%, -12%) scale(1);
+    }
+
+    @mixin atMedium {
+      position: static;
+      transform: none;
+      float: right;
+      margin-top: 27px;
+      margin-right: 40px;
     }
   }
 
   &__author {
+    /*border: 1px dashed salmon;*/
+    color: $creamyWhite;
     position: absolute;
     bottom: 0;
-    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+
+    strong {
+      font-style: italic;
+    }
+
+    span {
+
+      vertical-align: bottom;
+      position: relative;
+      top: 4px;
+      margin-left: 8px;
+
+    }
+
+    @mixin atSmall {
+      font-size: 1.2rem;
+
+    }
+
+    @mixin atMedium {
+      position: static;
+      float: left;
+      width: auto;
+      margin-left: 45px;
+      padding-top: 60px;
+    }
   }
 
 }
