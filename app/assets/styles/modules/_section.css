@@ -1,0 +1,10 @@
+.section {
+
+
+  @mixin clearfix;
+
+  /*border: 1px solid crimson;*/
+
+  position: relative;
+  background-color: #E8E8E8;
+}

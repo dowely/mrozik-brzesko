@@ -6,12 +6,12 @@
   }
 
   @mixin atMedium {
-      height: 600px;
+    height: 600px;
   }
 
   @mixin atLarge {
-      height: 650px;
-      padding-top: 10px;
+    height: 650px;
+    padding-top: 10px;
   }
 
   &__markup-heading {
@@ -175,6 +175,11 @@
   }
 
 /* Colors of the fonts */
+
+  &--rozek {
+    /*place holder, to be removed if ended up empty */
+  }
+
   &--kubek {
     color: #210d04;
   }

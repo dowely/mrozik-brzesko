@@ -1,0 +1,54 @@
+.slideshow {
+
+  position: relative; /* for z-index to work for tabulated slides on mobile */
+  transition: margin-bottom 0.8s;
+
+  &:not(.slideshow--rozek) {
+    border-radius: 25px 25px 0 0;
+  }
+
+  &--rozek {
+    margin-bottom: -47rem;
+    z-index: 1;
+  }
+
+  &--kubek {
+    margin-bottom: -37rem;
+    z-index: 2;
+  }
+
+  &--grand {
+    margin-bottom: 0;
+    z-index: 3;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+    z-index: 6;
+  }
+
+  &--current {
+    margin-bottom: -35px;
+  }
+
+  /* undoing mobile view for non current slides */
+
+  @mixin atSmall {
+
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+    display: none;
+
+    &:not(.slideshow--rozek) {
+      border-radius: 0;
+    }
+
+    &--current {
+      display: block;
+      opacity: 1;
+    }
+
+  }
+
+}

@@ -1,0 +1,86 @@
+.slideshow-desktop-nav {
+
+  display: none;
+  text-indent: 999em;
+
+  @mixin atLarge {
+    display: block;
+  }
+
+  &__prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    cursor: pointer;
+    z-index: 10;
+    opacity: .999;
+  }
+
+  &__prev:hover {
+    opacity: .85;
+  }
+
+  &__next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    cursor: pointer;
+    z-index: 10;
+    opacity: .999;
+  }
+
+  &__next:hover {
+    opacity: .85;
+  }
+
+  &__dots {
+    /*border: 1px solid blue;*/
+
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+
+    li {
+      border: 4px solid rgba(#000, .65);
+      border-radius: 50%;
+      position: relative;
+      display: block;
+      float: left;
+      width: 34px;
+      height: 34px;
+      margin: 0 8px;
+      cursor: pointer;
+    }
+
+    li:hover {
+      border: 4px solid rgba(#000, .5);
+    }
+
+    a {
+      background-color: rgba(#000, 0);
+      width: 5px;
+      height: 5px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      cursor: pointer; /* make the text accessible to screen readers */
+      transition: all .15s ease-in;
+    }
+
+    .current-dot a {
+      background-color: rgba(#000, .65);
+      width: 17px;
+      height: 17px;
+    }
+  }
+}
