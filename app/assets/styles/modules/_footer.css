@@ -113,4 +113,45 @@
     }
   }
 
+  &__horRule {
+    margin-top: 30px;
+    border-top: 2px solid $mainGray;
+    border-bottom: 1px solid #606060;
+
+    @mixin atSmall {
+      margin-top: 40px;
+    }
+
+    @mixin atMedium {
+      margin-top: 0;
+    }
+  }
+
+  &__copyright {
+    /*border: 1px solid red;*/
+    text-align: center;
+    color: $creamyWhite;
+    font-size: .8rem;
+    font-weight: 300;
+    padding: 25px 15px;
+    letter-spacing: 0.5px;
+
+    @mixin atSmall {
+      text-align: left;
+    }
+  }
+
+  &__copyright__right {
+    margin-top: 20px;
+
+    strong {
+      font-weight: 500;
+    }
+
+    @mixin atSmall {
+      float: right;
+      margin-top: 0;
+    }
+  }
+
 }
