@@ -1,0 +1,33 @@
+.frozen {
+
+  &__goods {
+
+    h2 {
+      background-color: lightblue;
+      font-family: 'Supermercado One', cursive;
+    }
+
+    h6 {
+      background-color: tomato;
+    }
+  }
+
+  &__article {
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    h3 {
+      font-family: 'Courgette', cursive;
+    }
+    b {
+      color: red;
+    }
+    p {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-style: italic;
+    }
+  }
+}
