@@ -494,10 +494,9 @@ span {
 .wrapper {
   padding-left: 10px;
   padding-right: 10px;
+  border: 1px solid blue;
 
 }
-
-/*border: 1px solid blue;*/
 
 @media (min-width: 1000px) {
 
@@ -909,49 +908,61 @@ span {
 /* Do not edit modules/_sprite directly as it is generated automatically by Gulp. Instead edit gulp/templates/sprite */
 
 .icon {
-      background-image: url('/assets/images/sprites/sprite-92b6deb8.svg');
+      background-image: url('/assets/images/sprites/sprite-045d5155.svg');
     }
 
-.icon--in {
-    width: 38px;
-    height: 38px;
-    background-position: 76.06019151846785% 18.307905686546462%;
-  }
-
-.icon--logo-mrozik {
-    width: 317px;
-    height: 132px;
+.icon--frozen-group-end {
+    width: 402px;
+    height: 50px;
     background-position: 100% 0;
   }
 
+.icon--frozen-group-start {
+    width: 402px;
+    height: 110px;
+    background-position: 100% 7.727975270479135%;
+  }
+
+.icon--in {
+    width: 36px;
+    height: 36px;
+    background-position: 99.87760097919217% 22.191400832177532%;
+  }
+
+.icon--logo-mrozik {
+    width: 315px;
+    height: 130px;
+    background-position: 83.82899628252788% 25.518341307814993%;
+  }
+
 .icon--map {
-    width: 452px;
-    height: 322px;
+    width: 451px;
+    height: 321px;
     background-position: 0 0;
   }
 
 .icon--next {
-    width: 52px;
-    height: 87px;
-    background-position: 63.04044630404463% 19.642857142857142%;
+    width: 50px;
+    height: 85px;
+    background-position: 95.39227895392278% 23.80952380952381%;
   }
 
 .icon--open {
-    width: 362px;
-    height: 437px;
+    width: 361px;
+    height: 436px;
     background-position: 0 100%;
   }
 
 .icon--phone {
-    width: 34px;
-    height: 34px;
-    background-position: 80.81632653061224% 18.20689655172414%;
+    width: 32px;
+    height: 32px;
+    background-position: 99.39098660170524% 27.03448275862069%;
   }
 
 .icon--prev {
-    width: 52px;
-    height: 87px;
-    background-position: 70.2928870292887% 19.642857142857142%;
+    width: 50px;
+    height: 85px;
+    background-position: 56.16438356164384% 43.154761904761905%;
   }
 
 .menu-bar {
@@ -981,7 +992,7 @@ span {
 
 .menu-bar__logo {
     position: absolute;
-    top: -3px; /* render enhancement */
+    top: 0; /* render enhancement */
     left: 50%;
     -webkit-transform: translateX(-50%) scale(.81);
             transform: translateX(-50%) scale(.81);
@@ -1667,3 +1678,30 @@ span {
       margin-top: 0
   }
   }
+
+.frozen__goods h2 {
+      background-color: lightblue;
+      font-family: 'Supermercado One', cursive;
+    }
+
+.frozen__goods h6 {
+      background-color: tomato;
+    }
+
+.frozen__article ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+.frozen__article h3 {
+      font-family: 'Courgette', cursive;
+    }
+
+.frozen__article b {
+      color: red;
+    }
+
+.frozen__article p {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-style: italic;
+    }
