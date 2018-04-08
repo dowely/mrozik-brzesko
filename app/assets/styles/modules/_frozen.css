@@ -1,33 +1,64 @@
 .frozen {
+  overflow: hidden;
 
   &__goods {
+    border: 1px solid green;
+    position: relative;
 
     h2 {
       background-color: lightblue;
       font-family: 'Supermercado One', cursive;
+      text-align: center;
+      line-height: 100px;
+
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     h6 {
       background-color: tomato;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 
   &__article {
+    max-width: 380px;
+    margin: 0 auto;
+    border: 1px solid yellow;
 
     ul {
       list-style: none;
-      padding-left: 0;
+      margin: 0;
+      padding: 130px 0 80px 0;
     }
 
     h3 {
+      border: 1px solid blue;
       font-family: 'Courgette', cursive;
+      font-size: .9rem;
+      display: flex;
+      align-items: baseline;
+      margin-bottom: 0;
     }
-    b {
-      color: red;
+    strong {
+      font-size: 1.2rem;
+    }
+    span {
+      height: 1px;
+      background: red;
+      flex: auto;
+      margin: 0 7px;
     }
     p {
       font-family: 'Source Sans Pro', sans-serif;
       font-style: italic;
+      border: 1px dashed gray;
+      margin-top: 0;
     }
   }
 }

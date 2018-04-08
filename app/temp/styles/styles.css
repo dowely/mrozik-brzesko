@@ -1679,29 +1679,72 @@ span {
   }
   }
 
+.frozen {
+  overflow: hidden;
+}
+
+.frozen__goods {
+    border: 1px solid green;
+    position: relative;
+  }
+
 .frozen__goods h2 {
       background-color: lightblue;
       font-family: 'Supermercado One', cursive;
+      text-align: center;
+      line-height: 100px;
+
+      position: absolute;
+      top: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
     }
 
 .frozen__goods h6 {
       background-color: tomato;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
     }
+
+.frozen__article {
+    max-width: 380px;
+    margin: 0 auto;
+    border: 1px solid yellow;
+  }
 
 .frozen__article ul {
       list-style: none;
-      padding-left: 0;
+      margin: 0;
+      padding: 130px 0 80px 0;
     }
 
 .frozen__article h3 {
+      border: 1px solid blue;
       font-family: 'Courgette', cursive;
+      font-size: .9rem;
+      display: flex;
+      align-items: baseline;
+      margin-bottom: 0;
     }
 
-.frozen__article b {
-      color: red;
+.frozen__article strong {
+      font-size: 1.2rem;
+    }
+
+.frozen__article span {
+      height: 1px;
+      background: red;
+      flex: auto;
+      margin: 0 7px;
     }
 
 .frozen__article p {
       font-family: 'Source Sans Pro', sans-serif;
       font-style: italic;
+      border: 1px dashed gray;
+      margin-top: 0;
     }
