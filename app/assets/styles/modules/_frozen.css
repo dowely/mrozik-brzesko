@@ -1,6 +1,32 @@
 .frozen {
   overflow: hidden;
 
+  &__mobile-nav {
+    background-color: $horizRule;
+    padding-top: 10px;
+    display: flex;
+    /*justify-content: space-evenly; not supported by Edge*/
+    flex-wrap: wrap-reverse;
+
+    div {
+      border: 3px solid #fff;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 72px;
+      height: 72px;
+      position: relative;
+    }
+
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(.8);
+    }
+  }
+
   &__goods {
     border: 1px solid green;
     position: relative;

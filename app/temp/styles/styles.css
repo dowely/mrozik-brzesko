@@ -908,8 +908,38 @@ span {
 /* Do not edit modules/_sprite directly as it is generated automatically by Gulp. Instead edit gulp/templates/sprite */
 
 .icon {
-      background-image: url('/assets/images/sprites/sprite-045d5155.svg');
+      background-image: url('/assets/images/sprites/sprite-513056bf.svg');
     }
+
+.icon--burger {
+    width: 74px;
+    height: 67px;
+    background-position: 81.25802310654686% 42.028985507246375%;
+  }
+
+.icon--chicken {
+    width: 74px;
+    height: 74px;
+    background-position: 64.31322207958922% 42.4597364568082%;
+  }
+
+.icon--dumpling {
+    width: 74px;
+    height: 70px;
+    background-position: 57.89473684210526% 54.585152838427945%;
+  }
+
+.icon--fish {
+    width: 74px;
+    height: 42px;
+    background-position: 98.33119383825417% 34.26573426573427%;
+  }
+
+.icon--fries {
+    width: 58px;
+    height: 74px;
+    background-position: 72.32704402515724% 42.4597364568082%;
+  }
 
 .icon--frozen-group-end {
     width: 402px;
@@ -944,7 +974,7 @@ span {
 .icon--next {
     width: 50px;
     height: 85px;
-    background-position: 95.39227895392278% 23.80952380952381%;
+    background-position: 56.16438356164384% 43.154761904761905%;
   }
 
 .icon--open {
@@ -959,10 +989,22 @@ span {
     background-position: 99.39098660170524% 27.03448275862069%;
   }
 
+.icon--pizza {
+    width: 74px;
+    height: 67px;
+    background-position: 90.7573812580231% 42.028985507246375%;
+  }
+
 .icon--prev {
     width: 50px;
     height: 85px;
-    background-position: 56.16438356164384% 43.154761904761905%;
+    background-position: 95.39227895392278% 23.80952380952381%;
+  }
+
+.icon--strawberry {
+    width: 74px;
+    height: 74px;
+    background-position: 57.89473684210526% 65.15373352855052%;
   }
 
 .menu-bar {
@@ -1682,6 +1724,33 @@ span {
 .frozen {
   overflow: hidden;
 }
+
+.frozen__mobile-nav {
+    background-color: #333333;
+    padding-top: 10px;
+    display: flex;
+    /*justify-content: space-evenly; not supported by Edge*/
+    flex-wrap: wrap-reverse;
+  }
+
+.frozen__mobile-nav div {
+      border: 3px solid #fff;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 72px;
+      height: 72px;
+      position: relative;
+    }
+
+.frozen__mobile-nav span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%) scale(.8);
+              transform: translate(-50%, -50%) scale(.8);
+    }
 
 .frozen__goods {
     border: 1px solid green;
