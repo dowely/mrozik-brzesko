@@ -8,7 +8,7 @@
     /*border: 1px solid green;*/
     list-style: none;
     margin: 0;
-    padding: 0 25px;
+    padding: 7px 25px;
     display: table;
   }
 
@@ -20,7 +20,9 @@
   }
 
   li.current-link {
-    background-color: rgba($mainGray, 1);
+    /*background-color: rgba($mainGray, 1);*/
+    border: 3px solid #fff;
+    border-radius: 12px;
   }
 
   img {
